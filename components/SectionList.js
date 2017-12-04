@@ -58,6 +58,9 @@ export default class SectionList extends Component {
     const { y, width, height } = this.measure;
     const index = (Math.floor(ev.locationY / height));
 
+    console.log("ev Y :", ev.locationY)
+    console.log("height",height)
+    console.log("index", index)
     if (index >= this.props.sections.length || index < 0) {
       return;
     }
